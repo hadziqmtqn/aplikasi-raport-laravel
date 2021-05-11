@@ -1,0 +1,143 @@
+tr.selected {
+    background: rgb(227, 243, 238)!important;
+}
+li.side-child a{
+    padding-left: 75px!important;
+}
+.loading {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    background: #374a4fd9;    
+    color: #efefef;
+}
+
+.pulse {
+    /* margin:100px; */
+    /* display: block; */
+    width: 100px;
+    /* height: 22px; */ 
+    /* border-radius: 50%; */
+    /* background: #cca92c; */
+    cursor: pointer;
+    /* filter: drop-shadow(0 0 0 white); */
+    animation: pulse 2s infinite;
+    position: relative;
+    /* margin-bottom: 100px; */
+  }
+  .pulse:hover {
+    animation: none;
+  }
+  
+  @keyframes pulse {
+    0% {
+        filter: drop-shadow(0 0 0 white);
+        /* transform: scale(0.5 0.5); */
+        /* width: 100px; */
+    }
+    25% {
+        filter: drop-shadow(0 0 10px white);
+        transform: rotate(10deg);
+        /* width: 150px; */
+    }
+    50% {
+        filter: drop-shadow(0 0 10px white);
+        transform: rotate(-10deg);
+        /* width: 150px; */
+    }
+    75% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        /* width: 100px */
+        /* transform: rotate(45deg); */
+    }
+  }
+/* .modal {
+    position: relative!important;
+}
+
+.modal-dialog {
+    position: fixed!important;
+    width: 100%!important;
+    margin: 0!important;
+    padding: 10px!important;
+} */
+.img-circle {
+    border-radius: 50%;
+}
+.dataTables_filter input {
+    padding:5px 10px!important;
+    border-radius: 3px!important;
+    border-color: #999!important;
+    outline-color: none!important;
+}
+[type="search"] {
+    outline-offset: 0;
+}
+
+.c-sidebar .c-sidebar-nav-link.c-active,
+.c-sidebar .c-active.c-sidebar-nav-dropdown-toggle {
+
+    background: #45a29d8c!important;
+}
+/* Mdi Icons */
+.alert.mdi::before,
+.breadcrumb .mdi::before,
+.btn.mdi::before,
+.card-title.mdi::before,
+.card-subtitle.mdi::before,
+.card-link.mdi::before,
+.dropdown-item.mdi::before,
+.list-group-item.mdi::before,
+.nav-link.mdi::before {
+    font-size: 1.25em;
+    line-height: initial;
+    position: relative;
+    top: 0.09rem;
+}
+.alert.mdi::before,
+.breadcrumb .mdi:not(:empty)::before,
+.btn.mdi:not(:empty)::before,
+.card-title.mdi:not(:empty)::before,
+.card-subtitle.mdi:not(:empty)::before,
+.card-link.mdi:not(:empty)::before,
+.dropdown-item.mdi:not(:empty)::before,
+.nav-link.mdi:not(:empty)::before {
+    margin-right: 0.25rem;
+}
+.list-group-item.mdi:not(:empty)::before {
+    margin-right: 0.5rem;
+}
+.dropdown-item.mdi:not(:empty)::before {
+    margin-left: -0.75rem;
+}
+.alert.mdi::before,
+.list-group-item.mdi:not(:empty)::before {
+    margin-left: -0.5rem;
+}
+.modal-title.mdi::before {
+    font-size: 1.5em;
+    line-height: 0.5;
+    position: relative;
+    top: 0.26rem;
+    margin-right: 0.5rem;
+}
+.table th, .table td  {
+    padding: 3px!important;
+}
+
+.file-picked {
+    border-radius: 1px;
+    border: 2px solid gray;
+    background: #c7f3c8;
+}
+
+.file-unpicked {
+    border-radius: 5px; border: 2px dashed gray;
+}
+
+.d-none {
+    transition: all .35s ease-in-out;
+}
